@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_text_app_bar"
+    tools:context=".screens.employee.EmployeeDetailedActivity">
+
+
+    <TextView
+        android:id="@+id/textViewLabelSpeciality"
+        style="@style/style_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/speciality_label"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLabelBirthDay" />
+
+    <TextView
+        android:id="@+id/textViewAppBarEmployee"
+        style="@style/style_app_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/employee_app_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLabelName"
+        style="@style/style_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_label"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppBarEmployee" />
+
+    <TextView
+        android:id="@+id/textViewLabelLastName"
+        style="@style/style_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/last_name_label"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLabelName" />
+
+    <TextView
+        android:id="@+id/textViewLabelAge"
+        style="@style/style_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/age_label"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLabelLastName" />
+
+    <TextView
+        android:id="@+id/textViewLabelBirthDay"
+        style="@style/style_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/birth_day_label"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLabelAge" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        style="@style/style_text_main"
+        android:layout_marginBottom="8dp"
+        android:text="@string/name_default"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLastName"
+        app:layout_constraintStart_toStartOf="@+id/textViewLastName" />
+
+    <TextView
+        android:id="@+id/textViewLastName"
+        style="@style/style_text_main"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/last_name_default"
+        app:layout_constraintStart_toEndOf="@+id/textViewLabelLastName"
+        app:layout_constraintTop_toTopOf="@+id/textViewLabelLastName" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        style="@style/style_text_main"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/age_default"
+        app:layout_constraintStart_toEndOf="@+id/textViewLabelAge"
+        app:layout_constraintTop_toTopOf="@+id/textViewLabelAge" />
+
+    <TextView
+        android:id="@+id/textViewBirthDay"
+        style="@style/style_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/birth_day_default"
+        app:layout_constraintStart_toEndOf="@+id/textViewLabelBirthDay"
+        app:layout_constraintTop_toTopOf="@+id/textViewLabelBirthDay" />
+
+    <ImageView
+        android:id="@+id/imageViewEmployee"
+        android:layout_width="95dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/employee_image_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppBarEmployee"
+        app:srcCompat="@drawable/avatar_place_holder" />
+
+    <TextView
+        android:id="@+id/textViewEmployeeSpecialities"
+        style="@style/style_text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/speciality_default"
+        app:layout_constraintStart_toEndOf="@+id/textViewLabelSpeciality"
+        app:layout_constraintTop_toTopOf="@+id/textViewLabelSpeciality" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

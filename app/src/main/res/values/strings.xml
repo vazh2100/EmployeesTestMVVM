@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Test Employees</string>
+    <string name="name_label">Имя:</string>
+    <string name="last_name_label">Фамилия:</string>
+    <string name="employee_app_bar">Сотрудник</string>
+    <string name="age_label">Возраст:</string>
+    <string name="birth_day_label">Дата рождения:</string>
+    <string name="name_default">Андрей</string>
+    <string name="last_name_default">Важенин</string>
+    <string name="age_default">25</string>
+    <string name="birth_day_default">01.10.1994</string>
+    <string name="employee_image_description">Фото сотрудника</string>
+    <string name="speciality_label">Специализация:</string>
+    <string name="speciality_default">Дизайнер</string>
+    <string name="employees_app_bar">Сотрудники</string>
+    <string name="specialities_app_bar">Специальности</string>
+</resources>
